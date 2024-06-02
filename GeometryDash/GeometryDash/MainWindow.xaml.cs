@@ -22,20 +22,25 @@ namespace GeometryDash
     /// </summary>
     public partial class MainWindow : Window
     {
-        GeometryDashGame game;
+        private GeometryDashGame _game;
         public MainWindow()
         {
             InitializeComponent();
             IScreen screen = new WPFScreen(Canvas);
-            game = new GeometryDashGame(screen);
+            _game = new GeometryDashGame(screen);
         }
         private void Play(object sender, RoutedEventArgs e)
         {
-            game.Run();
+            _game.Run();
         }
         private void SliderSound_OnValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            game.BackgroundVolume = e.NewValue/100.0;
+            _game.BackgroundVolume = e.NewValue/100.0;
+        }
+
+        private void SliderWind_OnValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            _game.Wind2 = e.NewValue;
         }
     }
 }

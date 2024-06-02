@@ -1,5 +1,8 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cmalom_005CDesktop_005Cmm076547_005CS2_005CS2_005F01_0020_002D_0020D_00E9veloppement_0020d_0027une_0020application_005CSAE_002D2_002E01_005CGeometryDash_005CIUTGame_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\malom\Desktop\mm076547\S2\S2_01 - Développement d'une application\SAE-2.01\GeometryDash\IUTGame.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=37ff3925_002Dc787_002D4f93_002Db191_002Dc4c5fde27fd1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UnitTest1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::9AD03409-F9DC-4875-9DE4-6DF1628B83D6::net6.0::GeometryDashTest.UnitTest1&lt;/TestId&gt;&#xD;

@@ -17,6 +17,13 @@
                     Padding="6" 
                     Width="200"
                     ValueChanged="SliderSound_OnValueChanged"/>
+            <Slider x:Name="SliderWind" 
+                    Minimum="-10000" 
+                    Maximum="10000" 
+                    Margin="50 10" 
+                    Padding="6" 
+                    Width="200"
+                    ValueChanged="SliderWind_OnValueChanged"/>
         </StackPanel>
         
         <Canvas x:Name="Canvas" Background="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
