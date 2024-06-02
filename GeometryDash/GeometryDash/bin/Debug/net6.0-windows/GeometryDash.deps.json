@@ -12,6 +12,14 @@
         },
         "runtime": {
           "GeometryDash.dll": {}
+        },
+        "resources": {
+          "en/GeometryDash.resources.dll": {
+            "locale": "en"
+          },
+          "es/GeometryDash.resources.dll": {
+            "locale": "es"
+          }
         }
       },
       "IUTGame/2.2.2.0": {
