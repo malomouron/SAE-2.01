@@ -37,10 +37,5 @@ namespace GeometryDash
         {
             _game.BackgroundVolume = e.NewValue/100.0;
         }
-
-        private void SliderWind_OnValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            _game.Wind2 = e.NewValue;
-        }
     }
 }

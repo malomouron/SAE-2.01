@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:GeometryDash"
         xmlns:res="clr-namespace:GeometryDash.Res"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" SizeToContent="Height" Width="1280">
     <DockPanel>
         <StackPanel DockPanel.Dock="Top" HorizontalAlignment="Stretch" Background="LightGray" Orientation="Horizontal" >
-            <Button Margin="10" Content="{x:Static res:Strings.Play}" Click="Play" Padding="6"  />
+            <Button x:Name="ButtonPlay" Content="Play" Margin="50 10" Padding="6" Width="200" Click="Play"/>
             <Slider x:Name="SliderSound" 
                     Minimum="0" 
                     Maximum="100" 
@@ -17,15 +17,8 @@
                     Padding="6" 
                     Width="200"
                     ValueChanged="SliderSound_OnValueChanged"/>
-            <Slider x:Name="SliderWind" 
-                    Minimum="-10000" 
-                    Maximum="10000" 
-                    Margin="50 10" 
-                    Padding="6" 
-                    Width="200"
-                    ValueChanged="SliderWind_OnValueChanged"/>
         </StackPanel>
+        <Canvas x:Name="Canvas" Background="Red" Height="720" Width="1280" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
         
-        <Canvas x:Name="Canvas" Background="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
     </DockPanel>
 </Window>

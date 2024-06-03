@@ -22,6 +22,8 @@
         <None Remove="Sprites\9.png" />
         <None Remove="Sprites\balle.png" />
         <None Remove="Sprites\joueur.png" />
+        <None Remove="Sprites\background\groundSquare_10_2_001-hd.png" />
+        <None Remove="Sprites\background\game_bg_01_001-hd.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -57,6 +59,24 @@
         <Resource Include="Sprites\9.png" />
         <Resource Include="Sprites\balle.png" />
         <Resource Include="Sprites\joueur.png" />
+        <Resource Include="Sprites\background\game_bg_01_001-hd.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <Resource Include="Sprites\background\groundSquare_10_2_001-hd.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="Sprites\background\groundSquare_01_001.png" />
+        <Resource Include="Sprites\background\groundSquare_01_001.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="Sprites\background\game_bg_01_001.png" />
+        <Resource Include="Sprites\background\game_bg_01_001.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+        <None Remove="Sprites\background\groundSquare_01_001-hd.png" />
+        <Resource Include="Sprites\background\groundSquare_01_001-hd.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
     </ItemGroup>
 
     <ItemGroup>
@@ -72,6 +92,10 @@
             <Generator>PublicResXFileCodeGenerator</Generator>
             <LastGenOutput>Strings.Designer.cs</LastGenOutput>
         </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
     </ItemGroup>
 
 </Project>
