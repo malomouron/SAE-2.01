@@ -1,0 +1,25 @@
+﻿<Window x:Class="GeometryDash.ChooseLevel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:GeometryDash"
+        Title="ChooseLevel" WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="0" Content="&lt;" Click="PreviousLevel"/>
+        <ContentControl Grid.Column="1" x:Name="LevelsControl" Content="{Binding}">
+            <ContentControl.ContentTemplate>
+                <DataTemplate>
+                    <Button Width="100" Height="100" Click="Level_Click">
+                        <Rectangle Fill="{Binding Color}" />
+                    </Button>
+                </DataTemplate>
+            </ContentControl.ContentTemplate>
+        </ContentControl>
+        <Button Grid.Column="2" Content="&gt;" Click="NextLevel"/>
+    </Grid>
+</Window>
